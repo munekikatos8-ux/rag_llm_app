@@ -25,12 +25,12 @@ dotenv.load_dotenv()
 if "AZ_OPENAI_API_KEY" not in os.environ:
     MODELS = [
         # "openai/o1-mini",
-        "openai/gpt-4o",
-        "openai/gpt-4o-mini",
+        "openai/gpt-4.1",
+        "openai/gpt-4.1-mini",
         "anthropic/claude-3-5-sonnet-20240620",
     ]
 else:
-    MODELS = ["azure-openai/gpt-4o"]
+    MODELS = ["azure-openai/gpt-4.1"]
 
 
 st.set_page_config(
